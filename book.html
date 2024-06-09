@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Image with Back Button</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+        }
+
+        .bg-image {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            text-align: center;
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Full Page Image -->
+    <div class="container">
+        <img class="bg-image" src="image (4).png" alt="Full Page Image">
+
+        <!-- Content -->
+        <div class="content">
+            <h1>Full Page Image</h1>
+            <p>This is a full-page image with a back button.</p>
+            <a href="javascript:history.back()" class="back-btn">Back</a>
+        </div>
+    </div>
+
+</body>
+</html>
